@@ -6,6 +6,17 @@ Analysis of 1,299 development site transactions totaling $16.62B between 2018-20
 
 ## Rate Environment Evolution & Market Response
 
+```
+Transaction Distribution by Rate Environment
+Rate(%)   0    100   200   300   400   500
+0.25%     |==============================================| 438
+1.75%     |=========|  91
+2.50%     |============|  118
+5.25%     |================================|  311
+          |
+Each = represents ~10 transactions
+```
+
 ### Low-Rate Era (0.25%)
 - **Transaction Volume**: 438 transactions
 - **Average Deal Size**: $11.07M
@@ -23,6 +34,17 @@ Analysis of 1,299 development site transactions totaling $16.62B between 2018-20
 - **Total Volume**: $3.57B
 - **Key Insight**: Strong transaction volume maintained despite higher rates
 
+```
+PPZFA Evolution by Rate Environment
+PPZFA($)  150   200   250   300   350   400
+0.25%     |===================|  208.09
+1.75%     |========================|  244.71
+2.50%     |============================|  277.58
+5.25%     |=======================|  244.01
+          |
+Each = represents $10 PPZFA
+```
+
 ## Geographic Market Analysis
 
 ### Borough Performance Metrics
@@ -34,6 +56,30 @@ Analysis of 1,299 development site transactions totaling $16.62B between 2018-20
 | Queens | $222.18 | $12.44M | 254 |
 | Bronx | $94.04 | $9.05M | 297 |
 | Staten Island | $91.47 | $2.94M | 15 |
+
+```
+Borough PPZFA Distribution
+PPZFA($)  0    100   200   300   400   500
+Manhattan |========================================| $391.98
+Brooklyn  |========================| $248.67
+Queens    |=====================| $222.18
+Bronx     |=========| $94.04
+S.Island  |=========| $91.47
+          |
+Each = represents $10 PPZFA
+```
+
+```
+Transaction Volume by Borough
+Count     0    100   200   300   400   500   600
+Brooklyn  |============================================| 540
+Bronx     |====================| 297
+Queens    |================| 254
+Manhattan |============| 193
+S.Island  |=| 15
+          |
+Each = represents 20 transactions
+```
 
 ## Zoning Performance Analysis
 
@@ -47,31 +93,80 @@ Analysis of 1,299 development site transactions totaling $16.62B between 2018-20
 | R6A | $216.19 | $617.3M | 77 |
 | R7A | $200.82 | $536.7M | 65 |
 
+```
+Zoning PPZFA Comparison
+PPZFA($)  0    100   200   300   400   500
+C5-3      |========================================| $404.00
+R6A       |=====================| $216.19
+R7A       |====================| $200.82
+R6        |==================| $190.60
+M3-1      |=============| $130.50
+          |
+Each = represents $10 PPZFA
+```
+
 ## Rate Impact Analysis
 
 ### Correlation Analysis
 
-#### 1-Month Lag
-- PPZFA vs Rate: 0.1624
-- Volume vs Rate: 0.1248
-- Transaction Count vs Rate: 0.2140
+#### Time-Lagged Correlations
+```
+Lag Period  -0.2  -0.1   0    0.1   0.2   0.3
+1-Month     |          |=====| 0.1624
+3-Month     |          |=====| 0.1576
+6-Month     |          |=====| 0.1704
+9-Month     |          |=| 0.0221
+            |
+Each = represents 0.05 correlation coefficient
+```
 
-#### 3-Month Lag
-- PPZFA vs Rate: 0.1576
-- Volume vs Rate: 0.0934
-- Transaction Count vs Rate: 0.1771
+- **1-Month Lag**
+  - PPZFA vs Rate: 0.1624
+  - Volume vs Rate: 0.1248
+  - Transaction Count vs Rate: 0.2140
 
-#### 6-Month Lag
-- PPZFA vs Rate: 0.1704
-- Volume vs Rate: 0.0643
-- Transaction Count vs Rate: 0.1669
+- **3-Month Lag**
+  - PPZFA vs Rate: 0.1576
+  - Volume vs Rate: 0.0934
+  - Transaction Count vs Rate: 0.1771
 
-#### 9-Month Lag
-- PPZFA vs Rate: 0.0221
-- Volume vs Rate: 0.0072
-- Transaction Count vs Rate: 0.2147
+- **6-Month Lag**
+  - PPZFA vs Rate: 0.1704
+  - Volume vs Rate: 0.0643
+  - Transaction Count vs Rate: 0.1669
+
+- **9-Month Lag**
+  - PPZFA vs Rate: 0.0221
+  - Volume vs Rate: 0.0072
+  - Transaction Count vs Rate: 0.2147
 
 ## Recent Market Trends (Last 6 Months)
+
+```
+Recent PPZFA Trends
+PPZFA($)  180   190   200   210   220   230   240
+Mar 2024  |=================| $184.30
+Apr 2024  |==============================| $238.20
+May 2024  |===================| $195.27
+Jun 2024  |===================| $197.96
+Jul 2024  |=====================| $217.90
+Aug 2024  |======================| $223.80
+          |
+Each = represents $5 PPZFA
+```
+
+```
+Monthly Transaction Count
+Count     25    30    35    40    45    50
+Mar 2024  |=====================================| 42
+Apr 2024  |================================| 38
+May 2024  |============================| 35
+Jun 2024  |==========================| 33
+Jul 2024  |========================| 30
+Aug 2024  |======================| 28
+          |
+Each = represents 1 transaction
+```
 
 | Month | PPZFA | Transaction Count |
 |-------|-------|------------------|
@@ -137,10 +232,3 @@ This analysis is based on:
 While historical patterns provide valuable insights, future market behavior may be influenced by:
 - Changes in development regulations
 - Infrastructure improvements
-- Economic cycle evolution
-- Borough-specific development patterns
-- Zoning changes and policy updates
-
----
-
-*Note: All figures based on analysis of 1,299 transactions from 2018-2024. Past performance does not guarantee future results.*
